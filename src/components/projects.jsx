@@ -136,7 +136,7 @@ export default function Projects() {
         <div className={`mt-8 text-center space-y-6 ${isVisible ? "animate-slide-in-up" : "opacity-0"}`} style={{animationDelay: "0.4s"}}>
           <p className="text-mist text-lg">Want to see more of my work?</p>
           <a
-            href="https://github.com/Damola707"
+            href="https://github.com/agboolaephraim"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 rounded-lg border border-white/20 text-slate-100 font-medium hover:border-aqua hover:text-aqua hover:bg-aqua/5 transition-all duration-300 transform hover:scale-105"

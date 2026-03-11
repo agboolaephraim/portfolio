@@ -13,7 +13,7 @@ const projects = [
       "Built the front-end login and dashboard pages for Sentra, an AI-powered tech stack assessment platform. Features modern UI with dark mode, responsive design, and interactive components using React and Tailwind CSS.",
     tags: ["React", "JavaScript", "UI Components", "Dashboard", "TailwindCSS"],
     live: "http://localhost:5175",
-    github: "https://github.com/Damola707/jamforte-sentra-dashboard",
+    github: "https://github.com/agboolaephraim/jamforte-sentra-dashboard",
     featured: true,
   },
   {
@@ -38,7 +38,7 @@ const projects = [
     "Designed and developed the Insighta web application, a data-driven insights platform focused on clean UI, smooth user experience, and performance. Built with a modern frontend architecture and responsive design for seamless usage across devices.",
   tags: ["React", "Vite", "Tailwind CSS", "UI/UX", "Dashboard"],
   live: "https://insightaweb.netlify.app/", 
-  github: "https://github.com/Damola707/insighta_web_app",
+  github: "https://github.com/agboolaephraim/insighta_web_app",
   featured: true,
 },
 ]

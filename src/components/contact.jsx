@@ -81,7 +81,7 @@ export default function Contact() {
             <p className="text-mist/80">Find me on social media and professional platforms</p>
             <div className="flex gap-3 flex-wrap">
               <a
-                href="https://github.com/Damola707"
+                href="https://github.com/agboolaephraim"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-4 py-2 rounded-lg border border-white/10 text-mist hover:border-aqua hover:text-aqua transition-all duration-300 text-sm font-medium transform hover:scale-110"
