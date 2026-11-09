@@ -27,7 +27,7 @@ export default function Hero() {
         {/* Badge */}
         <div className={`inline-block ${isVisible ? "animate-slide-in-up" : "opacity-0"}`}>
           <p className="text-xs tracking-[0.35em] text-calm uppercase px-4 py-2 rounded-full bg-ocean border border-white/5">
-           
+           👋Hello World
           </p>
         </div>
 
