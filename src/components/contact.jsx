@@ -23,10 +23,9 @@ export default function Contact() {
   }
 
   const socials = [
-    { name: "GitHub", url: "#", icon: "github" },
-    { name: "LinkedIn", url: "#", icon: "linkedin" },
-    { name: "Twitter", url: "#", icon: "twitter" },
-    { name: "Email", url: "mailto:your@email.com", icon: "email" },
+    { name: "GitHub", url: "https://github.com/agboolaephraim", hoverColor: "hover:border-aqua hover:text-aqua" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/agboola-ephraim-ayodamola-chidozie-6a231a245/", hoverColor: "hover:border-calm hover:text-calm" },
+    { name: "Twitter", url: "https://twitter.com", hoverColor: "hover:border-aqua hover:text-aqua" },
   ]
 
   return (
@@ -64,7 +63,7 @@ export default function Contact() {
               >
                 Send Email
               </a>
-              <div className="text-sm text-mist/70">
+              <div className="text-sm text-mist/70 text-left space-y-1">
                 <p>📧 agboolaephraim@gmail.com</p>
                 <p>📱 +234 9020570468</p>
                 <p>📱 +234 9136386124</p>
@@ -80,33 +79,18 @@ export default function Contact() {
             </div>
             <p className="text-mist/80">Find me on social media and professional platforms</p>
             <div className="flex gap-3 flex-wrap">
-              <a
-                href="https://github.com/agboolaephraim"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-lg border border-white/10 text-mist hover:border-aqua hover:text-aqua transition-all duration-300 text-sm font-medium transform hover:scale-110"
-                title="GitHub"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.linkedin.com/in/agboola-ephraim-ayodamola-chidozie-6a231a245/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-lg border border-white/10 text-mist hover:border-calm hover:text-calm transition-all duration-300 text-sm font-medium transform hover:scale-110"
-                title="LinkedIn"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-4 py-2 rounded-lg border border-white/10 text-mist hover:border-aqua hover:text-aqua transition-all duration-300 text-sm font-medium transform hover:scale-110"
-                title="Twitter"
-              >
-                Twitter
-              </a>
+              {socials.map((soc) => (
+                <a
+                  key={soc.name}
+                  href={soc.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`px-4 py-2 rounded-lg border border-white/10 text-mist ${soc.hoverColor} transition-all duration-300 text-sm font-medium transform hover:scale-110`}
+                  title={soc.name}
+                >
+                  {soc.name}
+                </a>
+              ))}
             </div>
           </div>
         </div>

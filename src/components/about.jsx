@@ -5,20 +5,49 @@ export default function About() {
 
   const skillsData = [
     {
-      category: "Web Development",
-      items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "PHP"],
+      category: "Frontend & Web Architecture",
+      items: [
+        "Next.js 16 (App Router)",
+        "React (18 & 19)",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Vite",
+        "Tailwind CSS (v3 & v4)",
+        "HTML5 & CSS3",
+      ],
     },
     {
-      category: "Design & Tools",
-      items: ["UI/UX Design", "Figma", "Enterprise Architect", "Adobe Suite"],
+      category: "State Management & Data Pipeline",
+      items: [
+        "TanStack React Query",
+        "Redux Toolkit",
+        "Zod Schema Validation",
+        "Axios (Interceptors & Auth)",
+        "NextAuth.js v5",
+        "Context API",
+      ],
     },
     {
-      category: "Other Technologies",
-      items: ["Python", "SQL", "Arduino", "Linux (Ubuntu)", "Git"],
+      category: "Realtime, APIs & Integrations",
+      items: [
+        "WebSockets (Socket.IO)",
+        "Algolia Instant Search",
+        "Sentry Performance Tracking",
+        "Role-Based Access Control (RBAC)",
+        "Recharts Data Visualization",
+        "CKEditor 5",
+      ],
     },
     {
-      category: "Soft Skills",
-      items: ["Leadership", "Problem Solving", "Teamwork", "Time Management", "Creativity"],
+      category: "Design Systems & Engineering Tools",
+      items: [
+        "UI/UX Design",
+        "Radix UI & Shadcn UI",
+        "Figma",
+        "Git & GitHub",
+        "Enterprise Architect",
+        "Responsive & Dark Mode UI",
+      ],
     },
   ]
 
@@ -68,8 +97,11 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             {skillsData.map((skillGroup, idx) => (
               <div key={skillGroup.category} className={`${isVisible ? `stagger-item-${idx}` : "opacity-0"}`}>
-                
-                <div className="flex flex-wrap gap-2">
+                <h4 className="text-base font-semibold text-slate-200 uppercase tracking-widest mb-4 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-aqua" />
+                  {skillGroup.category}
+                </h4>
+                <div className="flex flex-wrap gap-2 mb-6">
                   {skillGroup.items.map((skill) => (
                     <span
                       key={skill}

@@ -57,20 +57,22 @@ export default function Header() {
       </nav>
 
       {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden bg-ocean border-t border-white/5 px-6 py-4 space-y-3">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="block text-sm text-mist hover:text-aqua transition py-2"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </a>
-          ))}
-        </div>
-      )}
+      <div 
+        className={`md:hidden bg-ocean/95 backdrop-blur-xl border-b border-white/5 px-6 space-y-1 transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-72 opacity-100 py-4" : "max-h-0 opacity-0 py-0 pointer-events-none"
+        }`}
+      >
+        {navItems.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="block text-sm text-mist hover:text-aqua transition py-2.5 border-b border-white/5 last:border-none"
+            onClick={() => setIsOpen(false)}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
     </header>
   )
 }
